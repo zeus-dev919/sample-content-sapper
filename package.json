@@ -12,6 +12,7 @@
       "url": "https://github.com/Simply007"
     }
   ],
+  "repository": "https://github.com/Simply007/kontent-sample-app-svelte-sapper",
   "license": "MIT",
   "engines": {
     "node": "10.x",
