@@ -1,5 +1,7 @@
 # Build a Website on a Headless CMS with Svelte
 
+[![Preview](https://img.shields.io/badge/-Preview-brightgreen.svg)](https://kontent-sample-app-svelte-sapper.now.sh/)
+
 Working repository for based on [ReactiveConf 2019][reactive] workshop repository. The goal is to showcase a website for fictional café with [Svelte][svelte], [Sapper][sapper], and [Kentico Kontent][kontent]. The result can be deployed to [ZEIT][zeit].
 
 ![showcase of the site home page](showcase.png)
