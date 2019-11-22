@@ -1,12 +1,16 @@
 {
-  "name": "reactiveconf-sapper-workshop",
-  "description": "Project for Sapper & Svelte workshop at ReactiveConf 2019",
-  "private": true,
-  "version": "0.0.2",
+  "name": "kontent-sample-app-svelte-sapper",
+  "description": "Project for Sapper & Svelte showcasing sourcing from Kentico Kontent",
+  "version": "1.0.0",
   "contributors": [
     "Adam Sobotka <adam.sobotka@socialbakers.com>",
     "Peter Popluhar <peter.popluhar@socialbakers.com>",
-    "Jan Vlnas <jan.vlnas@socialbakers.com>"
+    "Jan Vlnas <jan.vlnas@socialbakers.com>",
+    {
+      "name": "Ondřej Chrastina",
+      "email": "chrastina.ondra@gmail.com",
+      "url": "https://github.com/Simply007"
+    }
   ],
   "license": "MIT",
   "engines": {
@@ -15,17 +19,19 @@
   },
   "scripts": {
     "dev": "sapper dev",
-    "build": "ls && sapper build",
+    "build": "sapper build",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
-    "prettier": "prettier --write --ignore-path .gitignore '**/*.{svelte,js,html,css}'"
+    "prettier": "prettier --write --ignore-path .gitignore **/*.{svelte,js,html,css}"
   },
   "dependencies": {
+    "@kentico/kontent-delivery": "^8.0.0",
     "compression": "^1.7.1",
     "polka": "next",
+    "rxjs": "^6.5.3",
     "sirv": "^0.4.0"
   },
   "devDependencies": {
@@ -36,7 +42,7 @@
     "@babel/runtime": "^7.0.0",
     "@now/node": "^1.0.1",
     "@polka/send": "^0.4.0",
-    "node-fetch": "^2.6.0",
+    "cypress": "^3.6.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "prettier-plugin-svelte": "^0.7.0",
