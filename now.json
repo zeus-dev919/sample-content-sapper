@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "kontent-sample-app-svelte-sapper",
+  "builds": [{"src": "package.json", "use": "now-sapper"}],
+  "public": true
+}
