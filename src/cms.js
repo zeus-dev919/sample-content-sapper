@@ -4,7 +4,7 @@ const PROJECT_ID = 'f71ad6dd-59c3-002a-7dc9-5bbf5521f1a3';
 
 const deliveryClient = new DeliveryClient({
   projectId: PROJECT_ID,
-  globalHeaders: [
+  globalHeaders: () => [
     {
       header: 'X-KC-SOURCE',
       value: 'kontent-sample-app-svelte-sapper;1.0.0'
